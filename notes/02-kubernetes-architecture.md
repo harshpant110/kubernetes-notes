@@ -23,10 +23,10 @@ The components communicate through the Kubernetes API, primarily exposed by the 
       +------+-------+          +--------+--------+
       |      |       |          |        |        |
    API     etcd  Scheduler   Kubelet  Runtime  Networking
-  Server                      |        |        |
-      |                       +----+---+--------+
- Controller                         |
-  Manager                       Application Pods
+  Server                        |        |        |
+      |                         +----+---+--------+
+ Controller                             |
+  Manager                          Application Pods
 ```
 
 This is a simplified conceptual diagram. Actual component placement and networking implementations depend on the cluster configuration.
